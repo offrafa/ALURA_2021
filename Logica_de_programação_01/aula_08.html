@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oitava aula</title>
+</head>
+<body>
+    <h1>if else </h1>
+    <p>Esse programa sorteia um número aleatório se eu acertar aparece uma mensagem se não aparece outra mensagem</p>
+</body>
+<script>
+
+
+            // oitava aula estrutura condicional if else 
+    function pulaLinha (){
+        document.write("<br>");
+        document.write("<br>");
+      
+     }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+     }
+
+     var numeroPensado = Math.round(Math.random() * 10);
+     var chute = parseInt(prompt("digite seu chute"));
+
+     if (chute == numeroPensado) {
+        mostrando("voce ganhou");    
+      } else{
+        mostrando("voce errou, o numero sorteado foi " + numeroPensado);
+    }
+   
+ 
+
+</script>
+</html>

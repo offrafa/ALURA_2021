@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas>
+
+</body>
+<script>
+
+    function desenhaQuadro (x,y, cor){
+        let tela = document.querySelector('canvas');
+        let pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect (x, y, 50, 50);
+        pincel.fillstroke = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+
+    }
+
+    // desenhaQuadro(0, 0, 'blue');
+    // desenhaQuadro(0, 50, 'red');
+    // desenhaQuadro(0, 100, 'yellow')
+
+    /*
+   let x = 0;
+   while (x < 600){
+       desenhaQuadro(x, 0 ,'red');
+       desenhaQuadro(x, 50 ,'blue');
+       desenhaQuadro(x, 100 ,'yellow');
+       x = x + 50;
+   }
+   */
+
+   for (let x = 0; x < 600; x = x + 50) { 
+
+        desenhaQuadro(x, 0 ,'red');
+        desenhaQuadro(x, 50 ,'blue');
+        desenhaQuadro(x, 100 ,'yellow');
+
+   }
+
+</script>
+</html>

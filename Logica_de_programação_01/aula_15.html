@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15</title>
+</head>
+<body>
+    <h1>Adivinha</h1>
+    <br>
+    <p>Esse programa é o mesmo que o anterior só que a lógica é criar o numero aleatório quando Clio no botão</p> <br>
+    <input type="text">
+    <button>compare aqui o meu segredo</button>
+    
+</body>
+<script>
+
+
+var segredo = [5,7,10,3];
+    var input = document.querySelector("input");
+    input.focus();
+
+    console.log(segredo)
+    function sorteia (){
+         Math.round(Math.random()* 10);
+    }
+    function sorteiaNumeros (quantidade){
+        var segredo = [];
+        var numero = 1;
+
+
+        while (numero == quantidade){
+            var numeroAleatorio = sorteia();
+            var achou = false;
+
+            for(posicao = 0; posicao < segredo.length; posicao++){
+                if (segredo [posicao]== numeroAleatorio) {
+                    achou = true
+                    break
+                }
+            }
+
+
+            if (achou == false) {
+                segredo.push(numeroAleatorio);
+                 numero++
+            }
+            
+           
+        }
+        return segredo
+    }
+
+    var sorteiaNumeros = (3);
+
+    function verifica (){
+
+        var achou = false
+
+        for (let posicao = 0; posicao <= segredo.length; posicao++) {
+            if (input.value == segredo [posicao]) {
+            alert("voce acertou");
+        }else{
+            alert ("voce errou");
+        }
+        input.value = "";
+        input.focus();
+        achou = true;
+        break;
+        }
+            
+     }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+     
+    
+
+    
+</script>
+</html>

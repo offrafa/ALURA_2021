@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nona aula</title>
+</head>
+<body>
+    <h1>Loop</h1>
+    <p>Esse programa cria um loop desde o ano 1930 e soma 4 fazendo referência a copa que começou em 1930 e
+        acontece a cada 4 anos</p><br>
+</body>
+<script>
+    
+
+        // nona aula estrutura de repetição
+    function pulaLinha (){
+        document.write("<br>");
+        document.write("<br>");
+      
+     }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+     }
+     var limete = parseInt(prompt("entre com sua data limite"));
+
+     var anoCopa = 1930;
+
+     while (anoCopa <= limete) {
+         mostrando("teve copa em " + anoCopa);
+         anoCopa = anoCopa + 4;
+    }
+
+
+
+     
+    
+     
+
+</script>
+</html>

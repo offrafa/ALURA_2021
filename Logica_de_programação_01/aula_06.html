@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições</title>
+</head>
+<body>
+   <h1>Condições</h1> <br>
+   <p>Adicionando uma condição que compara o número de vitória, empate pontos total se for igual aparece
+    um alerta</p> <br>
+</body>
+<script>
+
+
+         // sexta aula condições com if 
+     function pulaLinha (){
+        document.write("<br>");
+        document.write("<br>");
+      
+     }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+     var vitoria = parseInt(prompt("Entre com o numero de vitoria"));
+     var empate = parseInt(prompt("Entre com o numro de empate"));
+     var pontos = (vitoria * 3 ) + empate;
+
+     mostrando("O ponto do seu time é " + pontos);
+
+        // condicionais 
+     if (pontos > 28){
+        mostrando("Seu time foi melhor de no ano passado ");
+    }
+     if (pontos < 28) {
+        mostrando("Seu time foi pior que o ano passado ");
+    }
+     if (pontos == 28) {
+        mostrando("seu time foi igual ao ano passado ");
+    }
+</script>
+</html>

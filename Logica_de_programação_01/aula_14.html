@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+</head>
+<body>
+    <h1>Repetição</h1>
+    <p>Esse programa coloca o mesmo elemento na tela em loop </p>
+</body>
+<script>
+
+            // aula 14
+       function pulaLinha (){
+        document.write("<br>");
+        document.write("<br>");
+      
+    }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+     for (let linha = 1; linha <= 3; linha++) {
+        for (let coluna = 1; coluna <= 10 ; coluna++) {
+           document.write("*");
+            
+        }
+         pulaLinha();
+    }
+
+</script>
+</html>

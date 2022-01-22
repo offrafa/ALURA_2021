@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+</head>
+<body>
+    <h1>if else breck</h1>
+    <p>Esse programa sorteia três números e te pede três chances para acertar, quando erra aparece na tela quando acerta sai do do loop e aparece a mensagem</p>
+</body>
+<script>
+       // aula 14 if else com breck para parar o funcionamento quando a condição for true
+     function pulaLinha (){
+       document.write("<br>");
+        document.write("<br>");
+      
+     }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+     }
+
+     var numeroPassado = Math.round(Math.random()* 10);
+     var tentativas = 1
+     console.log(numeroPassado)
+     while (tentativas <= 3) {
+         var chute = parseInt(prompt("digite seu chute"));
+         if (chute == numeroPassado){
+             mostrando("voce acertou o numero sorteado é " + numeroPassado);
+             break
+         } else {
+             mostrando("voce errou ")
+         }
+         
+         tentativas++
+         
+    } 
+
+</script>
+</html>

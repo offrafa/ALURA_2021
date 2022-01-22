@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+</head>
+<body>
+    <h1>Media</h1>
+    <p>Esse programa te pede uma informação dependendo da resposta é executado todas, dai ele pega o valor soma e divide para ter uma média</p>
+</body>
+<script>
+            // aula 13 estrutura de repetição com while 
+     function pulaLinha (){
+        document.write("<br>");
+        document.write("<br>");
+      
+    }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+     }
+
+     var totalFamiliares = parseInt(prompt("quantidade de familiares"));
+     var numero = 1
+     var toralIdade = 0
+
+     while (numero <= totalFamiliares) {
+         var idade = parseInt(prompt("informe a didade os seus familiares"));
+         toralIdade = toralIdade + idade
+         numero++
+      }
+
+     var mediaDasIdades = toralIdade/totalFamiliares;
+     mostrando("a media dos familiares é " +  mediaDasIdades);
+
+</script>
+</html>

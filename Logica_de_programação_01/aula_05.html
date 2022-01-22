@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta aula</title>
+</head>
+<body>
+    <h1>Função</h1><br>
+    <p>Uma função que recebe dois parâmetros como escrever na tela e pular linha</p>
+    <p>O programa é capaz de calcular dois números e dividir assim fazendo o IMC</p>
+</body>
+<script>
+            // quinta aula onde criei uma funcao que recebe dois parametros 
+      function pulaLinha (){
+        document.write("<br>");
+        document.write("<br>");
+      
+    }
+
+     function mostrando(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+     
+     function calculandoImc (altura, peso){
+        var imc = peso / (altura * altura);
+        mostrando("IMC calculado é " + Math.round(imc));
+    }
+     calculandoImc(1.71 ,73);
+     calculandoImc(1.72 , 71);
+    
+
+</script>
+</html>
